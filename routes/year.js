@@ -5,7 +5,7 @@ const fetch = require("node-fetch");
 /* GET users listing. */
 router.get("/", (req, res)=> {
     let date = new Date();
-    let year=date.getFullYear()
+    let year=date.getYear()
 
   res.json({ year: year });
 });
